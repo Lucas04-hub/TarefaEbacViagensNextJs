@@ -1,0 +1,50 @@
+.main {
+  background: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.tituloDestacado {
+  padding: 1rem;
+  background: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+  border-radius: 8px;
+  color: #1a2540; /* mais escuro */
+  margin-bottom: 2rem;
+  border-left: 8px solid #3ec6e0;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 0 4px 12px 0 #eef7ff; 
+}
+
+.paragrafo {
+  color: #1a2540;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.botaoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.botaoDestacado {
+  background: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+  border-left: 8px solid #3ec6e0;
+  color: #1a2540;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 16px;
+  padding: 1.5rem 3rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px 0 #eef7ff; 
+  transition: filter 0.2s;
+}
+
+.botaoDestacado:hover {
+  filter: brightness(95%);
+}
