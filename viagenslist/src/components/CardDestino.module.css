@@ -1,0 +1,31 @@
+.card {
+  background: #fff;
+  border: 2px solid #e0e7ef;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #eef7ff30;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  width: 260px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px #bae7ff60;
+  transform: scale(1.07);
+}
+/* Conteúdo dos textos dentro do card */
+.nome {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #143a60;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.descricao {
+  color: #3a5a7a;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 500;
+}

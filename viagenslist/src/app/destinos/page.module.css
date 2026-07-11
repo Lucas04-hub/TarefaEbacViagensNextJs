@@ -1,0 +1,57 @@
+.main {
+  background: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.tituloDestacado {
+  padding: 1rem;
+  background: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+  border-radius: 8px;
+  color: #1a2540;
+  margin-bottom: 2rem;
+  border-left: 8px solid #3ec6e0;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 0 4px 12px 0 #eef7ff;
+}
+
+/* Adicionar isso para os cards */
+.grid {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #e0e7ef;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #eef7ff30;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  width: 260px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px #bae7ff60;
+  transform: scale(1.07); /* <- EFEITO DE CRESCER */
+}
+/* Conteúdo dos textos dentro do card */
+.nome {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #143a60;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.descricao {
+  color: #3a5a7a;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 500;
+}
