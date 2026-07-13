@@ -1,19 +1,25 @@
 import { destinos } from "../../data/destinos";
 import CardDestino from "../../components/CardDestino";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function DestinosPage() {
   return (
     <main className={styles.main}>
-      <h1 className={styles.tituloDestacado}>Destinos Turísticos</h1>
+      <h1 className={styles.tituloDestaque}>Destinos Turísticos</h1>
       <div className={styles.grid}>
         {destinos.map((destino) => (
-          <CardDestino
+          <Link
             key={destino.id}
-            nome={destino.nome}
-            imagem={destino.imagem}
-            descricao={destino.descricao}
-          />
+            href={`/destinos/${destino.id}`}
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <CardDestino
+              nome={destino.nome}
+              imagem={destino.imagem}
+              descricao={destino.descricao}
+            />
+          </Link>
         ))}
       </div>
     </main>
