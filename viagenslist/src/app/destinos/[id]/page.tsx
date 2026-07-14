@@ -1,8 +1,12 @@
-import { destinos } from '@/src/data/destinos';
+import { destinos } from "@/src/data/destinos";
 
-export default function DetalheDestino({ params }: { params: { id: string } }) {
-  const id = Number(params.id); // convertendo string para number
-  const destino = destinos.find((d) => d.id === id);
+export default async function DetalheDestino({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const destino = destinos.find((d) => d.id === Number(id));
 
   if (!destino) return <div>Destino não encontrado.</div>;
 
