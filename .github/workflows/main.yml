@@ -24,3 +24,8 @@ jobs:
       
       - name: Buildar o projeto
         run: npm run build
+      - name: Deploy para Vercel
+        run: npx vercel --token ${{ secrets.VERCEL_TOKEN }} --prod
+      
+      
+      
