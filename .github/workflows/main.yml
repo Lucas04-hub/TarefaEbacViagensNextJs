@@ -26,7 +26,7 @@ jobs:
         run: cd viagenslist && npm run build
 
       - name: Deploy para Vercel
-        run: cd viagenslist && npx vercel --token ${{ secrets.VERCEL_TOKEN }} --prod
+        run: cd viagenslist && npx vercel --token ${{ secrets.VERCEL_TOKEN }} --yes
       
       
       
