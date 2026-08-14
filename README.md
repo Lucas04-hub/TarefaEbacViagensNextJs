@@ -1,7 +1,7 @@
 # Tarefa Viagens EBAC
 
 ## Deploy:
-A aplicação está publicada em: viagenslist-c5nghhwd1-lucas-lrds.vercel.app
+A aplicação está publicada em: viagenslist.vercel.app
 
 ## CI/CD (Integração Contínua e Deploy):
 A cada push ou pull request na branch `main`, o pipeline automatizado executa as seguintes etapas:
